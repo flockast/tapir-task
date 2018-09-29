@@ -1,0 +1,43 @@
+header {
+    font-size: 1rem;
+    height: 130em;
+    margin-bottom: 25em;
+    @media(max-width: 1200px) {
+        font-size: .9rem;
+    }
+    @media(max-width: 992px) {
+        font-size: .8rem;
+    }
+    @media(max-width: 820px) {
+        font-size: .7rem;
+    }
+}
+header .container {
+    height: 100%;
+}
+.header-menu {
+    width: 75.09788566953798%;
+    padding-left: 15px;
+    padding-right: 15px;
+    & > ul > li {
+        display: inline-block;
+    }
+    ul {
+        text-align: right;
+        li {
+            margin: 0 40em;
+            a {
+                color: #fff;
+                font-size: 17em;
+                line-height: 1.171176470588235;
+                text-decoration: none;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+            & > ul {
+                display: none;
+            }
+        }
+    }
+}

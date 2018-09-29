@@ -6,6 +6,153 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <h1>Hello from tapir task</h1>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="row row--center">
+                    <nav class="header-menu">
+                        <ul>
+                            <li><a href="#">О музее</a></li>
+                            <li><a href="#">Арт объекты</a></li>
+                            <li><a href="#">Новости музея</a>
+                                <ul>
+                                    <li><a href="#">Деньги из розетки</a></li>
+                                    <li><a href="#">Ромашки</a></li>
+                                    <li><a href="#">Чёрное и белое</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="masonry-section">
+            <div class="container">
+                <div class="row">
+                    <div class="masonry">
+                        <div class="masonry__item masonry__item--rec-horizontal masonry__item--exclusive">
+                            <div class="masonry__item-container">
+                                <div class="masonry__item-bg-img"></div>
+                                <div class="masonry__item-text masonry__item-text--bottom">
+                                    <span>
+                                        « Уникальное, ни на что не похожее<br>
+                                        действие, заставляющее переосмыслить<br>
+                                        привычные вещи »
+                                        <span class="masonry__item-text--caption">KudaGo</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry__item masonry__item--square masonry__item--exclusive">
+                            <div class="masonry__item-container">
+                                <div class="masonry__item-bg-color masonry__item-bg-color--red"></div>
+                                <div class="masonry__item-text masonry__item-text--h-center masonry__item-text--bottom">
+                                    <div>
+                                        <span class="masonry__item-text-big-number">30</span>
+                                        <span class="masonry__item-text-under-big-number">Арт-объектов</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry__item masonry__item--rec-vertical">
+                            <div class="masonry__item-container">
+                                <div class="masonry__item-bg-color masonry__item-bg-color--aqua"></div>
+                                <div class="masonry__item-text masonry__item-text--bottom">
+                                    <div>
+                                        <span class="masonry__item-text-sm-number">223 457</span>
+                                        <span class="masonry__item-text-under-sm-number">человек</span>
+                                        <span>
+                                            Посетило данный<br>
+                                            зеркальный арт-<br>
+                                            объект к моменту<br>
+                                            открытия музея
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry__item masonry__item--square">
+                            <div class="masonry__item-container">
+                                <div class="masonry__item-bg-color masonry__item-bg-color--light-blue"></div>
+                                <div class="masonry__item-text masonry__item-text--h-center masonry__item-text--bottom">
+                                    <div>
+                                        <span class="masonry__item-text-big-number">7</span>
+                                        <span class="masonry__item-text-under-big-number">мая</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry__item masonry__item--rec-horizontal">
+                            <div class="masonry__item-container">
+                                <div class="masonry__item-bg-color masonry__item-bg-color--sand"></div>
+                                <div class="masonry__item-text masonry__item-text--v-center">
+                                    <span>
+                                        Первый музей в России, собравший в себе<br>
+                                        множество самостоятельных арт-проектов,<br>
+                                        выставок, инсталляций и перформансов<br>
+                                        под одной крышей.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry__item masonry__item--empty">
+                            <div class="masonry__item-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slider-section">
+            <div class="container">
+                <div class="row">
+                    <div class="slider">
+                        <div class="slider__elements">
+                            <div class="slider__item">
+                                <div class="slider__image">
+                                    <img src="../assets/images/slider-1.jpg" alt="">
+                                </div>
+                                <div class="slider__description">
+                                    <div class="slider__description-title">Арт-объект</div>
+                                    <div class="slider__description-name">Деньги из розетки</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__pagenation">
+                            <div class="pagenation">
+                                <span class="pagenation__prev">
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 11.5 21.5" style="enable-background:new 0 0 11.5 21.5;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path class="pagenation__arrow-path" d="M10.2,0.2C10.4,0.1,10.6,0,10.8,0c0.2,0,0.4,0.1,0.5,0.2c0.3,0.3,0.3,0.8,0,1.1l-9.5,9.5l9.5,9.5
+                                                    c0.3,0.3,0.3,0.8,0,1.1c-0.3,0.3-0.8,0.3-1.1,0l-10-10c-0.3-0.3-0.3-0.8,0-1.1L10.2,0.2z M10.2,0.2"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                   </svg>
+                                </span>
+                                <span class="pagenation__current">1</span>/<span class="pagenation__all">7</span>
+                                <span class="pagenation__next">
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             viewBox="0 0 11.5 21.5" style="enable-background:new 0 0 11.5 21.5;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path class="pagenation__arrow-path" d="M1.3,21.3c-0.1,0.1-0.3,0.2-0.5,0.2c-0.2,0-0.4-0.1-0.5-0.2c-0.3-0.3-0.3-0.8,0-1.1l9.5-9.5L0.2,1.3
+                                                        c-0.3-0.3-0.3-0.8,0-1.1c0.3-0.3,0.8-0.3,1.1,0l10,10c0.3,0.3,0.3,0.8,0,1.1L1.3,21.3z M1.3,21.3"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

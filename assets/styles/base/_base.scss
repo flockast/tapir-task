@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+    font-size: 1px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Avenir Next Cyr', sans-serif;
+    font-size: 22px;
+    line-height: 0.7857142857142857;
+    color: #fff;
+}
