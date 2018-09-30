@@ -1,7 +1,5 @@
 header {
     font-size: 1rem;
-    min-height: 130em;
-    margin-bottom: 25em;
     @media(max-width: 1200px) {
         font-size: .9rem;
     }
@@ -19,10 +17,14 @@ header .container {
     @media(max-width: 992px) {
         width: 100%;
     }
+    @media(max-width: 768px) {
+        display: none;
+    }
     width: 75.09788566953798%;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 56em;
+    padding-bottom: 81em;
     & > ul > li {
         display: inline-block;
         vertical-align: top;
@@ -61,9 +63,10 @@ header .container {
             }
             & > ul {
                 max-height: 0;
+                position: relative;
+                top: 25px;
                 overflow: hidden;
                 transition: max-height .3s ease-out;
-                padding-top: 25px;
                 text-align: left;
                 min-width: 200px;
                 & li {
@@ -88,4 +91,49 @@ header .container {
     stroke: #FFFFFF;
     stroke-width: 0.5;
     stroke-miterlimit: 10;   
+}
+
+.menu-mobile {
+    @media(max-width: 768px) {
+        display: block;
+    }
+    display: none;
+    width: 100%;
+    font-size: 1rem;
+    &__toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 65px;
+        position: relative;
+        padding: 0 20px;
+        & i {
+            display: block;
+            width: 33px;
+            height: 2px;
+            margin-bottom: 5px;
+            background: #fff;
+        }
+    }
+    &__nav {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-out;
+        & ul li {
+            & a {
+                display: block;
+                color: #fff;
+                font-size: 16em;
+                text-decoration: none;
+                padding: 20px;
+                border-bottom: 1px solid #191919; 
+            }
+            & > ul li a {
+                padding-left: 40px;
+            }
+        }
+    }
+    &.opened &__nav {
+        max-height: 1000px;
+    }
 }

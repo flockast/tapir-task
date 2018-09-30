@@ -16,9 +16,6 @@ const appHtmlTitle = 'Tapir task homepage';
  */
 module.exports = {
     entry: {
-        vendor: [
-            'lodash'
-        ],
         bundle: path.join(dirApp, 'index')
     },
     resolve: {
