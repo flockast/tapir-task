@@ -40,6 +40,9 @@
     }
 }
 .pagenation {
+    @media(max-width: 1307px){
+        text-align: center;
+    }
     font-size: 22em;
     padding-top: 0.9090909090909091em;
     line-height: 1.272727272727273;
