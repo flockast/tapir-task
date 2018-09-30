@@ -10,3 +10,4 @@ import 'styles/index.scss';
 // ================================
 
 import './components/mobile-menu';
+import './components/slider';

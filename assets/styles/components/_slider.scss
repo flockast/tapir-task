@@ -13,9 +13,12 @@
 .slider {
     padding-bottom: 80em;
     width: 100%;
-    &__elements {}
+    &__elements {
+        width: 100%;
+    }
     &__item {
         display: flex;
+        float: left;
     }
     &__image {
         width: 59.51448707909162%;
@@ -38,6 +41,14 @@
             line-height: 0.9138588199420643;
         }
     }
+    &__track-outer {
+        width: 100%;
+        overflow: hidden;
+    }
+    &__track {
+        transform: translate3d(0, 0, 0);
+        transition: transform .5s ease;
+    }
 }
 .pagenation {
     @media(max-width: 1307px){
@@ -45,6 +56,8 @@
     }
     font-size: 22em;
     padding-top: 0.9090909090909091em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     line-height: 1.272727272727273;
     & span {
         display: inline-block;
