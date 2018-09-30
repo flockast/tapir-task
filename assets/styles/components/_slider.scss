@@ -28,12 +28,25 @@
     }
     &__image {
         width: 59.51448707909162%;
-        & img {
-            width: 100%;
-            height: auto;
-        }
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 36.02192638997651%;
         @media(max-width:768px) {
             width: 100%;
+            padding-bottom: 60.625%;
+        }
+        &--1 {
+            background-image: url('../images/slider-1.jpg')
+        }
+        &--2 {
+            background-image: url('../images/slider-2.jpg')
+        }
+        &--3 {
+            background-image: url('../images/slider-3.jpg')
+        }
+        &--4 {
+            background-image: url('../images/slider-4.jpg')
         }
     }
     &__description {
