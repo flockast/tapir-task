@@ -4,10 +4,13 @@
         font-size: .9rem;
     }
     @media(max-width: 992px) {
-        font-size: .7rem;
-    }
-    @media(max-width: 820px) {
         font-size: .6rem;
+    }
+    @media(max-width: 768px) {
+        font-size: 1rem;
+    }
+    @media(max-width: 576px) {
+        font-size: 0.5909090909090909rem;
     }
 }
 .masonry {
@@ -39,7 +42,7 @@
             padding-bottom: 25.13703993735317%;
         }
         &--exclusive {
-            padding-bottom: 25.05873140172279% 
+            padding-bottom: 25.05873140172279%;
         }
         &-container {
             position: absolute;
@@ -79,6 +82,9 @@
             line-height: 1.27;
             display: flex;
             align-items: flex-end;
+            @media(max-width:768px) {
+                padding: 1.272727272727273em;
+            }
             &--caption {
                 display: block;
                 font-size: 0.81em;
@@ -135,6 +141,48 @@
             }
             &--aqua {
                 background-color: #00a99d;
+            }
+        }
+        &--1 {
+            @media(max-width: 768px) {
+                order: 0;
+                width: 100%;
+                padding-bottom: 50%;
+            }
+        }
+        &--2 {
+            @media(max-width: 768px) {
+                order: 4;
+                width: 50%;
+                padding-bottom: 50%;
+            }
+        }
+        &--3 {
+            @media(max-width: 768px) {
+                order: 1;
+                width: 50%;
+                padding-bottom: 50%;
+            }
+        }
+        &--4 {
+            @media(max-width: 768px) {
+                order: 2;
+                width: 50%;
+                padding-bottom: 50%;
+            }
+        }
+        &--5 {
+            @media(max-width: 768px) {
+                order: 5;
+                width: 100%;
+                padding-bottom: 50%;
+            }
+        }
+        &--6 {
+            @media(max-width: 768px) {
+                order: 3;
+                width: 50%;
+                padding-bottom: 50%;
             }
         }
     }
