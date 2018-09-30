@@ -4,27 +4,36 @@
         font-size: .9rem;
     }
     @media(max-width: 992px) {
-        font-size: .8rem;
-    }
-    @media(max-width: 820px) {
         font-size: .7rem;
+    }
+    @media(max-width: 768px) {
+        font-size: .7rem;
+    }
+    @media(max-width: 576px) {
+        font-size: 0.5909090909090909rem;
     }
 }
 .slider {
+    position: relative;
     padding-bottom: 80em;
     width: 100%;
     &__elements {
         width: 100%;
     }
     &__item {
+        position: relative;
         display: flex;
+        flex-wrap: wrap;
         float: left;
     }
     &__image {
         width: 59.51448707909162%;
         & img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
+        }
+        @media(max-width:768px) {
+            width: 100%;
         }
     }
     &__description {
@@ -40,6 +49,13 @@
             font-size: 65.59em;
             line-height: 0.9138588199420643;
         }
+        @media(max-width:768px) {
+            width: 100%;
+        }
+        @media(max-width:576px) {
+            padding-left: 43em;
+            padding-top: 51em;
+        } 
     }
     &__track-outer {
         width: 100%;
@@ -56,26 +72,44 @@
     }
     font-size: 22em;
     padding-top: 0.9090909090909091em;
+    line-height: 1.272727272727273;
     -webkit-user-select: none;
     -moz-user-select: none;
-    line-height: 1.272727272727273;
+    @media(max-width: 768px) {
+        font-size: 0
+    }
     & span {
         display: inline-block;
+        vertical-align: middle;
     }
     &__arrow-path {
         fill: #fff;
     }
     &__prev, &__next {
-        width: 10px;
+        width: 12px;
+        height: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
         cursor: pointer;
         &:hover .pagenation__arrow-path {
             fill: $hover-color;
         }
+        @media(max-width: 768px) {
+            position: absolute;
+            top: 0;
+            padding-top: 30%;
+        }
     }
     &__prev {
         margin-right: 1.227272727272727em;
+        @media(max-width: 768px) {
+            left: 16px;
+        }
     }
     &__next {
         margin-left: 1.227272727272727em;
+        @media(max-width: 768px) {
+            right: 16px;
+        }
     }
 }
