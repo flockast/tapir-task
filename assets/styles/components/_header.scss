@@ -1,6 +1,6 @@
 header {
     font-size: 1rem;
-    height: 130em;
+    min-height: 130em;
     margin-bottom: 25em;
     @media(max-width: 1200px) {
         font-size: .9rem;
@@ -16,28 +16,76 @@ header .container {
     height: 100%;
 }
 .header-menu {
+    @media(max-width: 992px) {
+        width: 100%;
+    }
     width: 75.09788566953798%;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 56em;
     & > ul > li {
         display: inline-block;
+        vertical-align: top;
+    }
+    &__drop-item {
+        width: 150em;
     }
     ul {
+        @media(max-width: 992px) {
+            text-align: left;
+        }
         text-align: right;
         li {
+            position: relative;
+            text-align: left;
             margin: 0 40em;
+            &:hover > ul {
+                max-height: 200px;
+            }
             a {
+                position: relative;
                 color: #fff;
                 font-size: 17em;
                 line-height: 1.171176470588235;
                 text-decoration: none;
-                &:hover {
+                &:hover, &:hover svg path {
                     color: $hover-color;
                 }
+                &:hover svg path {
+                    fill: $hover-color;
+                    stroke: $hover-color;
+                }
+            }
+            &:hover .drop-icon-svg svg {
+                transform: rotate(180deg);
             }
             & > ul {
-                display: none;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height .3s ease-out;
+                padding-top: 25px;
+                text-align: left;
+                min-width: 200px;
+                & li {
+                    margin: 0 0 10em 0;
+                }
             }
         }
     }
+}
+.drop-icon-svg {
+    display: inline-block;
+    margin-left: 10px;
+    width: 11px;
+    height: 6px;
+    & svg {
+        transform: rotate(0deg);
+        transition: transform .3s ease-out;
+    }
+}
+.drop-icon-path {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+    stroke-width: 0.5;
+    stroke-miterlimit: 10;   
 }
